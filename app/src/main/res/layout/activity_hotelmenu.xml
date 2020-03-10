@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/relhotel"
+
+    tools:context=".Activity.Hotelmenu">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbars"
+        app:title="Add To Cart"
+        android:background="@color/colorPrimary"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressLayout">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/progress"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/toolbars"
+        android:id="@+id/recyclermenu"
+        android:layout_margin="5dp"
+        />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Check Out"
+    android:id="@+id/next"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>

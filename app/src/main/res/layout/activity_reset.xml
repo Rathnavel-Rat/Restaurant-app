@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ForgotActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:src="@drawable/loki"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/et_REotp"
+        android:layout_width="387dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/imageView"
+        android:drawableLeft="@drawable/ic_smobile"
+        android:ems="10"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:inputType="number"
+        android:hint="Moible number(10digit)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_below="@+id/et_REotp"
+        android:id="@+id/et_REpassword"
+        android:layout_width="387dp"
+        android:layout_height="47dp"
+        android:hint="NEW PASSWORD"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+
+
+    <EditText
+        android:layout_below="@+id/et_REpassword"
+        android:id="@+id/et_REconpassword"
+        android:layout_width="387dp"
+        android:layout_height="47dp"
+        android:hint="Confrim NewPassword"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_REconpassword"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+
+        android:id="@+id/bt_REsubmit"/>
+</RelativeLayout>

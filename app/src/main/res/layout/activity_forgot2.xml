@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ForgotActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:src="@drawable/loki"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/et_Fmobile"
+        android:layout_width="387dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/imageView"
+        android:drawableLeft="@drawable/ic_smobile"
+        android:ems="10"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="number"
+        android:hint="Moible number(10digit)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:autofillHints="" />
+
+    <EditText
+    android:layout_below="@+id/et_Fmobile"
+        android:id="@+id/et_Fmail"
+        android:layout_width="387dp"
+        android:layout_height="47dp"
+        android:hint="mail address"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="333dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Fmail"
+        android:text="NEXT"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+
+        android:id="@+id/bt_Fnext"/>
+</RelativeLayout>
